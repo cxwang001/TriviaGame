@@ -1,0 +1,17 @@
+h1{
+	text-align: center;
+	color: orange;
+}
+
+button{
+	border: 3px solid blue;
+}
+
+.container {
+	text-align: center;
+}
+
+.jumbotron{
+	background-image:url('../images/tech.jpg');
+	color: #688B25;
+}
