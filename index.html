@@ -3,8 +3,6 @@
 <head>
 	<title>TriviaGame</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script type="text/javascript" src="assets/javascript/game.js"></script>
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
@@ -19,8 +17,9 @@
 			</p>
 		</div>
 	</div>
-	
-	<div class="container" id="page">
+	<div class="main-body">
+		
+	<div class="container" id="q1">
 		<br>
  		<div class="jumbotron">
     		<h1 align="text-center">Computer Trivia</h1>
@@ -28,23 +27,23 @@
     		<p>Time Remaining: <span id="timeRemaining">100</span></p>
     		<br>
 			<br>
-		<div class="container">
-  				<p> 1.The first person shooter video game Doom was first released in what year?</p>
-  					<label class="radio-inline"><input type="radio" value="false" name="quesiton1">1980</label>
-  					<label class="radio-inline"><input type="radio" value="true" name="quesiton1"">1993</label>
-  					<label class="radio-inline"><input type="radio" value="false" name="quesiton1"">1994</label>
-  					<label class="radio-inline"><input type="radio" value="false" name="quesiton1"">1989</label>
+		<div class="container", id="q2">
+  				<p> 1. The first person shooter video game Doom was first released in what year?</p>
+  					<label class="radio-inline"><input class="button-question" type="radio" value="false" name="quesiton1">1980</label>
+  					<label class="radio-inline"><input class="button-question" type="radio" value="true" name="quesiton1">1993</label>
+  					<label class="radio-inline"><input class="button-question" type="radio" value="false" name="quesiton1">1994</label>
+  					<label class="radio-inline"><input class="button-question" type="radio" value="false" name="quesiton1">1989</label>
 		</div>
 		<br>
 		<br>
 
 			<!--2 -->
 		<div class="container">
-  				<p> 2.In what year was the first Apple computer released?</p>
-  					<label class="radio-inline"><input type="radio" value="false" name="question2">1987</label>
-  					<label class="radio-inline"><input type="radio" value="false" name="question2">1975</label>
-  					<label class="radio-inline"><input type="radio" value="false" name="question2">1970</label>
-  					<label class="radio-inline"><input type="radio" value="true" name="question2">1976</label>
+  				<p> 2. In what year was the first Apple computer released?</p>
+  					<label class="radio-inline"><input class="button-question" type="radio" value="false" name="question2">1987</label>
+  					<label class="radio-inline"><input class="button-question" type="radio" value="false" name="question2">1975</label>
+  					<label class="radio-inline"><input class="button-question" type="radio" value="false" name="question2">1970</label>
+  					<label class="radio-inline"><input class="button-question" type="radio" value="true" name="question2">1976</label>
 			</div>
 			<br>
 			<br>
@@ -52,10 +51,10 @@
 			<!-- 3 -->
 		<div class="container">
   				<p> 3. In what year did Nintendo release its first game console in North America?</p>
-  					<label class="radio-inline"><input type="radio" value="false" name="question3">1980</label>
-  					<label class="radio-inline"><input type="radio" value="false" name="question3">1982</label>
-  					<label class="radio-inline"><input type="radio" value="false" name="question3">1976</label>
-  					<label class="radio-inline"><input type="radio" value="true" name="question3">1985</label>
+  					<label class="radio-inline"><input class="button-question" type="radio" value="false" name="question3">1980</label>
+  					<label class="radio-inline"><input class="button-question" type="radio" value="false" name="question3">1982</label>
+  					<label class="radio-inline"><input class="button-question" type="radio" value="false" name="question3">1976</label>
+  					<label class="radio-inline"><input class="button-question" type="radio" value="true" name="question3">1985</label>
 		</div>
 		<br>
 		<br>
@@ -63,10 +62,10 @@
 			<!-- 4 -->
 		<div class="container">
   				<p> 4.Steve Jobs, Steve Wozniak, and Ronald Wayne founded what company in 1976?</p>
-  					<label class="radio-inline"><input type="radio" value="true" name="question4">Apple Computer</label>
-  					<label class="radio-inline"><input type="radio" value="false" name="question4">Micorsoft</label>
-  					<label class="radio-inline"><input type="radio" value="false" name="question4">IBM</label>
-  					<label class="radio-inline"><input type="radio" value="false" name="question4">Dell</label>
+  					<label class="radio-inline"><input class="button-question" type="radio" value="true" name="question4">Apple Computer</label>
+  					<label class="radio-inline"><input class="button-question" type="radio" value="false" name="question4">Micorsoft</label>
+  					<label class="radio-inline"><input class="button-question" type="radio" value="false" name="question4">IBM</label>
+  					<label class="radio-inline"><input class="button-question" type="radio" value="false" name="question4">Dell</label>
 		</div>
 		<br>
 		<br>
@@ -74,10 +73,10 @@
 			<!-- 5	 -->
 		<div class="container">			 
   				<p> 5. In 2004, which company was founded? </p>
-    				<label class="radio-inline"><input type="radio" value="false" name="question5">Twitter</label>
-  					<label class="radio-inline"><input type="radio" value="false" name="question5">HP</label>
-  					<label class="radio-inline"><input type="radio" value="true" name="question5">Facebook</label>
-  					<label class="radio-inline"><input type="radio" value="false" name="question5">Tesla</label>
+    				<label class="radio-inline"><input class="button-question" type="radio" value="false" name="question5">Twitter</label>
+  					<label class="radio-inline"><input class="button-question" type="radio" value="false" name="question5">HP</label>
+  					<label class="radio-inline"><input class="button-question" type="radio" value="true" name="question5">Facebook</label>
+  					<label class="radio-inline"><input class="button-question" type="radio" value="false" name="question5">Tesla</label>
 		</div>
 			<br>
 			<br>
@@ -89,6 +88,9 @@
 
 	</div>
 </div>		
+	</div>
 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/javascript/app.js"></script>
 </body>
 </html>
