@@ -4,7 +4,7 @@ $(document).ready(function() {
 //set up Global variables
 var rightAnswer = 0;
 var wrongAnswer = 0;
-var noAnswer=0;
+var noAnswer=5;
 var number = 50;
 
     //  Variable that will hold our interval ID when we execute
@@ -28,6 +28,7 @@ var intervalId;
 				console.log(wrongAnswer);
 			}
 			noAnswer = 5 - (rightAnswer + wrongAnswer);
+			// console.log("unanswered" + noAnswer);
 		});
 
 	}
