@@ -13,11 +13,11 @@
 			<br>
 			<br>
 			<p>
-				<button type="button" class="btn btn-default btn-lg">Test Your Basic Computer Knowledge</button>
+				<button type="button" class=" startButton btn btn-default btn-lg">Test Your Basic Computer Knowledge</button>
 			</p>
 		</div>
 	</div>
-	<div class="main-body">
+	<div hidden class="main-body">
 		
 	<div class="container" id="q1">
 		<br>
@@ -83,11 +83,27 @@
 			<br>
 
 			 <p>
-  				<button type="button" class="btn btn-primary btn-lg" id="doneButton">Submit</button>
+  				<button type="button" class="btn btn-primary btn-lg" id="submit">Submit</button>
 			</p>
 
 	</div>
 </div>		
+	</div>
+
+	<div hidden class="container" id="results">
+
+		<br>
+
+ 		<div class="jumbotron">
+    		<h1>Computer Trivia</h1>
+    		<br>
+    		<p>Results</p>
+    		<br>
+    		<p>Right Answers: <span id="rightAnswer"></span></p>
+    		<p>Wrong Answers: <span id="wrongAnswer"></span></p>
+    		<p>No answer: <span id="noAnswer"></span></p>
+  		</div>
+
 	</div>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
