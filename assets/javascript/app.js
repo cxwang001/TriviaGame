@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
 
-//set up Global variables
+//Declare Global variables
 var rightAnswer = 0;
 var wrongAnswer = 0;
 var noAnswer=5;
@@ -79,10 +79,8 @@ var intervalId;
 
         //  ...run the stop function.
         stop();
-
-        //  Alert the user that time is up.
         
-        $('.main-body').hide();
+      $('.main-body').hide();
     	$('#results').show();
     	$('#rightAnswer').html(rightAnswer);
     	$('#wrongAnswer').html(wrongAnswer);
