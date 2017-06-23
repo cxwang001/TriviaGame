@@ -15,3 +15,7 @@ button{
 	background-image:url('../images/tech.jpg');
 	color: #688B25;
 }
+
+p{
+	text-align: center;
+}
